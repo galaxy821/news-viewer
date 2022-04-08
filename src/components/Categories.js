@@ -57,7 +57,7 @@ const Categories = ({ onSelect, category }) => {
           key={c.name}
           className={() => (category === c.name ? 'active' : '')}
           onClick={() => onSelect(c.name)}
-          to={c.name === 'all' ? '' : `/${c.name}`}
+          to={c.name === 'all' ? '/news-viewer' : `/news-viewer/${c.name}`}
           //   exact={c.name === 'all'}
         >
           {c.text}

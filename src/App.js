@@ -16,7 +16,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<NewsPage />}>
-        <Route path=":category" element={<NewsPage />} />
+        <Route path="/news-viewer" element={<NewsPage />} />
+        <Route path="/news-viewer/:category" element={<NewsPage />} />
       </Route>
     </Routes>
   );
